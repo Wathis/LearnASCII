@@ -8,38 +8,16 @@
 
 import UIKit
 
-class WAViewTable : UIView{
+class WAViewTable : UITableViewCell {
     
-    fileprivate let decimalTitle : UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = UIColor(rgb: 0xE0E0E0)
-        label.textAlignment = .center
-        label.font = UIFont(name: "BodoniSvtyTwoITCTT-Bold", size: 15)
-        return label
-    }()
+    fileprivate let decimalTitle : UILabel = WALabelPrincipal()
     
-    fileprivate let hexaTitle : UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = UIColor(rgb: 0xE0E0E0)
-        label.textAlignment = .center
-        label.font = UIFont(name: "BodoniSvtyTwoITCTT-Bold", size: 15)
-        return label
-    }()
+    fileprivate let hexaTitle : UILabel = WALabelPrincipal()
     
-    fileprivate let charTitle : UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.textColor = UIColor(rgb: 0xE0E0E0)
-        label.textAlignment = .center
-        label.font = UIFont(name: "BodoniSvtyTwoITCTT-Bold", size: 15)
-        return label
-    }()
+    fileprivate let charTitle : UILabel = WALabelPrincipal()
     
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupViews()
     }
     
@@ -51,6 +29,16 @@ class WAViewTable : UIView{
         setupDecimal(text: decimal)
         setupHexa(text: hex)
         setupChar(text: char)
+    }
+    
+    func setColorFonts(color : UIColor) {
+        charTitle.textColor = color
+        decimalTitle.textColor = color
+        hexaTitle.textColor = color
+    }
+    
+    func setBackgroundColor(color : UIColor) {
+        self.backgroundColor = color
     }
     
     func setupHexa(text : String){
@@ -67,22 +55,21 @@ class WAViewTable : UIView{
     
     fileprivate func setupViews() {
         self.addSubviews([decimalTitle,hexaTitle,charTitle])
-        let screenWidth = CGFloat(UIScreen.main.bounds.width)
         NSLayoutConstraint.activate([
             self.decimalTitle.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            self.decimalTitle.centerXAnchor.constraint(equalTo: self.centerXAnchor, constant: -CGFloat(screenWidth / 2)),
-            self.decimalTitle.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1/3),
+            self.decimalTitle.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 0),
+            self.decimalTitle.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1/5),
             self.decimalTitle.heightAnchor.constraint(equalTo: self.heightAnchor),
             
             self.hexaTitle.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            self.hexaTitle.centerXAnchor.constraint(equalTo: self.centerXAnchor, constant: 0),
-            self.hexaTitle.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1/3),
+            self.hexaTitle.leftAnchor.constraint(equalTo: self.decimalTitle.rightAnchor),
+            self.hexaTitle.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1/5),
             self.hexaTitle.heightAnchor.constraint(equalTo: self.heightAnchor),
             
-            self.decimalTitle.centerYAnchor.constraint(equalTo: self.centerYAnchor),
-            self.decimalTitle.centerXAnchor.constraint(equalTo: self.centerXAnchor, constant: CGFloat(screenWidth / 2)),
-            self.decimalTitle.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 1/3),
-            self.decimalTitle.heightAnchor.constraint(equalTo: self.heightAnchor),
+            self.charTitle.centerYAnchor.constraint(equalTo: self.centerYAnchor),
+            self.charTitle.leftAnchor.constraint(equalTo: self.hexaTitle.rightAnchor),
+            self.charTitle.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 3/5),
+            self.charTitle.heightAnchor.constraint(equalTo: self.heightAnchor),
         ])
         
     }

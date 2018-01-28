@@ -25,11 +25,15 @@ class WATabBarController: UITabBarController {
     
     private func createAViewController(controller : UIViewController, image : UIImage) -> UINavigationController {
         let controller = controller
-        controller.view.backgroundColor = UIColor(rgb: 0x2D3651)
+        controller.view.backgroundColor = UIColor(rgb: 0x202341)
         let navController = UINavigationController(rootViewController: controller)
-        navController.tabBarItem.image = image
+        navController.tabBarItem.image = image.withRenderingMode(.alwaysOriginal)
         navController.tabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
-
+        let layer = navController.navigationBar.layer
+        layer.shadowRadius = 8
+        layer.shadowOpacity = 0.3
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = CGSize(width: 0, height: 5)
         return navController
     }
 }

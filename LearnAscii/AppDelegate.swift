@@ -7,12 +7,12 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
@@ -20,15 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationBarAppearace = UINavigationBar.appearance()
         navigationBarAppearace.isTranslucent = false
         navigationBarAppearace.tintColor = .white
-        navigationBarAppearace.barTintColor = UIColor(rgb: 0x50597A)
+        navigationBarAppearace.barTintColor = UIColor(rgb: 0x394166)
         navigationBarAppearace.titleTextAttributes = [NSAttributedStringKey.foregroundColor : UIColor.white, NSAttributedStringKey.font : UIFont(name: "HelveticaNeue", size: 20) as Any]
         //GENERAL SETUPS
         //Mettre   -->   View controller-based status bar appearance      a   NO
         UIApplication.shared.statusBarStyle = .lightContent
-        UITabBar.appearance().tintColor = UIColor(rgb: 0x7DE3EC)
+        UITabBar.appearance().tintColor = UIColor(rgb: 0x394166)
         //Modify KeyBoard color
         UITextField.appearance().keyboardAppearance = .dark
         self.window?.rootViewController = WATabBarController()
+        FirebaseApp.configure()
         return true
     }
 

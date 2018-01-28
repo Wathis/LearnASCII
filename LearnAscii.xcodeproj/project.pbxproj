@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		077AD08D32D93DCC07E68076 /* Pods_LearnAscii.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A3E9D5117B14ACF9AA221C6 /* Pods_LearnAscii.framework */; };
 		6AAF6B11201CADDE00ACAAE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF6B10201CADDE00ACAAE5 /* AppDelegate.swift */; };
 		6AAF6B16201CADDE00ACAAE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AAF6B14201CADDE00ACAAE5 /* Main.storyboard */; };
 		6AAF6B18201CADDE00ACAAE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AAF6B17201CADDE00ACAAE5 /* Assets.xcassets */; };
@@ -16,12 +17,19 @@
 		6AAF6B27201CF45100ACAAE5 /* WAHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF6B26201CF45100ACAAE5 /* WAHomeController.swift */; };
 		6AAF6B29201CF46800ACAAE5 /* WATableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF6B28201CF46800ACAAE5 /* WATableController.swift */; };
 		6AAF6B2E201CF4D800ACAAE5 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF6B2D201CF4D800ACAAE5 /* Extension.swift */; };
-		6AAF6B30201CFE2200ACAAE5 /* WAViewHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF6B2F201CFE2200ACAAE5 /* WAViewHome.swift */; };
+		6AAF6B30201CFE2200ACAAE5 /* WAViewHomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF6B2F201CFE2200ACAAE5 /* WAViewHomeCell.swift */; };
 		6AAF6B32201D006300ACAAE5 /* WAViewSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF6B31201D006300ACAAE5 /* WAViewSettings.swift */; };
 		6AAF6B34201D007600ACAAE5 /* WAViewTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF6B33201D007600ACAAE5 /* WAViewTable.swift */; };
+		6AAF6B36201D036A00ACAAE5 /* WARowASCII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF6B35201D036A00ACAAE5 /* WARowASCII.swift */; };
+		6AAF6B38201D26FC00ACAAE5 /* WAViewHomeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF6B37201D26FC00ACAAE5 /* WAViewHomeHeader.swift */; };
+		6AAF6B3D201D425100ACAAE5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AAF6B3C201D425100ACAAE5 /* GoogleService-Info.plist */; };
+		6AAF6B3F201D435500ACAAE5 /* WAGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF6B3E201D435500ACAAE5 /* WAGameViewController.swift */; };
+		6AAF6B41201D440C00ACAAE5 /* WALabelPrincipal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AAF6B40201D440C00ACAAE5 /* WALabelPrincipal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00C9AD9D65155B7CDBA977E9 /* Pods-LearnAscii.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnAscii.release.xcconfig"; path = "Pods/Target Support Files/Pods-LearnAscii/Pods-LearnAscii.release.xcconfig"; sourceTree = "<group>"; };
+		2A3E9D5117B14ACF9AA221C6 /* Pods_LearnAscii.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearnAscii.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AAF6B0D201CADDE00ACAAE5 /* LearnAscii.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnAscii.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AAF6B10201CADDE00ACAAE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AAF6B15201CADDE00ACAAE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,9 +41,16 @@
 		6AAF6B26201CF45100ACAAE5 /* WAHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAHomeController.swift; sourceTree = "<group>"; };
 		6AAF6B28201CF46800ACAAE5 /* WATableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WATableController.swift; sourceTree = "<group>"; };
 		6AAF6B2D201CF4D800ACAAE5 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		6AAF6B2F201CFE2200ACAAE5 /* WAViewHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAViewHome.swift; sourceTree = "<group>"; };
+		6AAF6B2F201CFE2200ACAAE5 /* WAViewHomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAViewHomeCell.swift; sourceTree = "<group>"; };
 		6AAF6B31201D006300ACAAE5 /* WAViewSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAViewSettings.swift; sourceTree = "<group>"; };
 		6AAF6B33201D007600ACAAE5 /* WAViewTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAViewTable.swift; sourceTree = "<group>"; };
+		6AAF6B35201D036A00ACAAE5 /* WARowASCII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WARowASCII.swift; sourceTree = "<group>"; };
+		6AAF6B37201D26FC00ACAAE5 /* WAViewHomeHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAViewHomeHeader.swift; sourceTree = "<group>"; };
+		6AAF6B39201D29D500ACAAE5 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		6AAF6B3C201D425100ACAAE5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6AAF6B3E201D435500ACAAE5 /* WAGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WAGameViewController.swift; sourceTree = "<group>"; };
+		6AAF6B40201D440C00ACAAE5 /* WALabelPrincipal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WALabelPrincipal.swift; sourceTree = "<group>"; };
+		CB54EE02C28920C7E1556F26 /* Pods-LearnAscii.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearnAscii.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LearnAscii/Pods-LearnAscii.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +58,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				077AD08D32D93DCC07E68076 /* Pods_LearnAscii.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52ADFFC9F42B0D6A37FB3B61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A3E9D5117B14ACF9AA221C6 /* Pods_LearnAscii.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		53EA19048916B1FF90339934 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB54EE02C28920C7E1556F26 /* Pods-LearnAscii.debug.xcconfig */,
+				00C9AD9D65155B7CDBA977E9 /* Pods-LearnAscii.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6AAF6B04201CADDE00ACAAE5 = {
 			isa = PBXGroup;
 			children = (
 				6AAF6B0F201CADDE00ACAAE5 /* LearnAscii */,
 				6AAF6B0E201CADDE00ACAAE5 /* Products */,
+				53EA19048916B1FF90339934 /* Pods */,
+				52ADFFC9F42B0D6A37FB3B61 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +107,8 @@
 				6AAF6B2B201CF47300ACAAE5 /* Models */,
 				6AAF6B2A201CF46D00ACAAE5 /* Controller */,
 				6AAF6B10201CADDE00ACAAE5 /* AppDelegate.swift */,
+				6AAF6B39201D29D500ACAAE5 /* Ubuntu-Regular.ttf */,
+				6AAF6B3C201D425100ACAAE5 /* GoogleService-Info.plist */,
 				6AAF6B14201CADDE00ACAAE5 /* Main.storyboard */,
 				6AAF6B17201CADDE00ACAAE5 /* Assets.xcassets */,
 				6AAF6B19201CADDE00ACAAE5 /* LaunchScreen.storyboard */,
@@ -87,6 +124,7 @@
 				6AAF6B24201CF44500ACAAE5 /* WAParametersController.swift */,
 				6AAF6B26201CF45100ACAAE5 /* WAHomeController.swift */,
 				6AAF6B28201CF46800ACAAE5 /* WATableController.swift */,
+				6AAF6B3E201D435500ACAAE5 /* WAGameViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -95,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				6AAF6B2D201CF4D800ACAAE5 /* Extension.swift */,
+				6AAF6B35201D036A00ACAAE5 /* WARowASCII.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -102,9 +141,11 @@
 		6AAF6B2C201CF47700ACAAE5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				6AAF6B2F201CFE2200ACAAE5 /* WAViewHome.swift */,
+				6AAF6B2F201CFE2200ACAAE5 /* WAViewHomeCell.swift */,
 				6AAF6B31201D006300ACAAE5 /* WAViewSettings.swift */,
 				6AAF6B33201D007600ACAAE5 /* WAViewTable.swift */,
+				6AAF6B37201D26FC00ACAAE5 /* WAViewHomeHeader.swift */,
+				6AAF6B40201D440C00ACAAE5 /* WALabelPrincipal.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,9 +157,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6AAF6B1F201CADDE00ACAAE5 /* Build configuration list for PBXNativeTarget "LearnAscii" */;
 			buildPhases = (
+				74E1C896DFFFF0FA982CEEAD /* [CP] Check Pods Manifest.lock */,
 				6AAF6B09201CADDE00ACAAE5 /* Sources */,
 				6AAF6B0A201CADDE00ACAAE5 /* Frameworks */,
 				6AAF6B0B201CADDE00ACAAE5 /* Resources */,
+				ED4FD4B23BC0339474658CF3 /* [CP] Embed Pods Frameworks */,
+				F3AF2CD7CC4FEDE86285474C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AAF6B1B201CADDE00ACAAE5 /* LaunchScreen.storyboard in Resources */,
+				6AAF6B3D201D425100ACAAE5 /* GoogleService-Info.plist in Resources */,
 				6AAF6B18201CADDE00ACAAE5 /* Assets.xcassets in Resources */,
 				6AAF6B16201CADDE00ACAAE5 /* Main.storyboard in Resources */,
 			);
@@ -176,20 +221,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		74E1C896DFFFF0FA982CEEAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LearnAscii-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED4FD4B23BC0339474658CF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LearnAscii/Pods-LearnAscii-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LearnAscii/Pods-LearnAscii-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3AF2CD7CC4FEDE86285474C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LearnAscii/Pods-LearnAscii-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6AAF6B09201CADDE00ACAAE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6AAF6B23201CF3E300ACAAE5 /* WATabBarController.swift in Sources */,
+				6AAF6B41201D440C00ACAAE5 /* WALabelPrincipal.swift in Sources */,
 				6AAF6B34201D007600ACAAE5 /* WAViewTable.swift in Sources */,
+				6AAF6B38201D26FC00ACAAE5 /* WAViewHomeHeader.swift in Sources */,
 				6AAF6B27201CF45100ACAAE5 /* WAHomeController.swift in Sources */,
 				6AAF6B11201CADDE00ACAAE5 /* AppDelegate.swift in Sources */,
+				6AAF6B36201D036A00ACAAE5 /* WARowASCII.swift in Sources */,
 				6AAF6B32201D006300ACAAE5 /* WAViewSettings.swift in Sources */,
-				6AAF6B30201CFE2200ACAAE5 /* WAViewHome.swift in Sources */,
+				6AAF6B30201CFE2200ACAAE5 /* WAViewHomeCell.swift in Sources */,
 				6AAF6B2E201CF4D800ACAAE5 /* Extension.swift in Sources */,
 				6AAF6B29201CF46800ACAAE5 /* WATableController.swift in Sources */,
 				6AAF6B25201CF44500ACAAE5 /* WAParametersController.swift in Sources */,
+				6AAF6B3F201D435500ACAAE5 /* WAGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +431,7 @@
 		};
 		6AAF6B20201CADDE00ACAAE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB54EE02C28920C7E1556F26 /* Pods-LearnAscii.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -331,7 +439,7 @@
 				INFOPLIST_FILE = LearnAscii/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wathis.LearnAscii;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wathis.learnascii;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -340,6 +448,7 @@
 		};
 		6AAF6B21201CADDE00ACAAE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00C9AD9D65155B7CDBA977E9 /* Pods-LearnAscii.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -347,7 +456,7 @@
 				INFOPLIST_FILE = LearnAscii/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.wathis.LearnAscii;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wathis.learnascii;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
